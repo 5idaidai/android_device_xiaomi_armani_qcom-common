@@ -1,5 +1,12 @@
 #!/bin/bash
 
+export VENDOR=xiaomi
+export DEVICE=armani
+# Comment these out if there is no common device tree for this device
+export COMMON_DEVICE=msm8226-common
+export BOARD_VENDOR=xiaomi-qcom
+export TARGET_BOARD_PLATFORM=msm8226
+
 # Check to see if the user passed a folder in to extract from rather than adb pull
 if [ $# -eq 1 ]; then
     COPY_FROM=$1
